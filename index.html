@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 250px;
+            width: 250px;
+            box-shadow: 7px 5px 5px;
+            display: inline-block;
+            
+        }
+        .box2 {
+            height: 250px;
+            width: 250px;
+            border-style: solid;
+            display: inline-block;
+            margin-left: 55px;
+        }
+    </style>
+    <style>
+        .divinline {
+            text-align: center;
+        }
+
+        figure {
+            width: 25%;
+            float: left;
+            margin: 0px;
+            text-align: center;
+            padding: 0px;
+        }
+    </style>
+    <style>
+        .buttonstyle1 {
+            margin-left: 120px;
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .buttonstyle1:hover {
+            margin-left: 120px;
+            background: olive;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+    <style>
+        .buttonstyle2 {
+            margin-left: 40px;
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .buttonstyle2:hover {
+            margin-left: 40px;
+            background: olive;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+    <!--<script>
+    function picture1(elem){
+        console.log(elem)
+        elem.src = "bird.jpg"
+    }
+    </script>
+    <script>
+        function imageinnerhtml1(elem){
+            console.log(elem)
+            elem.src = 'bird.jpg'
+        }
+        function imageinnerhtml2(elem){
+            console.log(elem)
+            elem.src = 'cat.jpg'
+        }
+        function imageinnerhtml3(elem){
+            console.log(elem)
+            elem.src = 'dog.jpg'
+        }
+    </script> 
+    -->
+
+</head>
+
+<body>
+    <h1>Kristian Johannesen Uke2 pensum: random Images + image velger.</h1>
+    <p>button image selector and button image finder,</p>
+    <p>click on select animale image button 1,2 or 3 to get SRC for image,</p>
+    <p>then click on one of the empty boxes above to get an image, </p>
+    <section>
+        <div class="divinline">
+            <figure>
+                <img id="mypicture1" onclick="addTerjePic('mypicture1','250px')" class="box" />
+                <figcaption>image box 1</figcaption>
+                <button class="btn" onclick="bildeNavn()">Get Name of image above</button>
+                <p id="navn"></p>
+            </figure>
+            <figure>
+                <img id="mypicture2" onclick="addTerjePic('mypicture2','250px')" class="box" />
+                <figcaption>image box 2</figcaption>
+                <button class="btn" onclick="bildeNavn2()">Get Name of image above</button>
+                <p id="navn2"></p>
+            </figure>
+            <figure>
+                <img id="mypicture3" onclick="addTerjePic('mypicture3','250px')" class="box" />
+                <figcaption>image box 3</figcaption>
+                <button class="btn" onclick="bildeNavn3()">Get Name of image above</button>
+                <p id="navn3"></p>
+            </figure>
+        </div>
+    </section>
+    <br>
+    <div>
+        <p>&nbsp&nbsp</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+    <div>
+        <button style="font-size: 25px;"id="btn1" onclick="btn1onclick(this)" class="buttonstyle1">select secret animal image 1</button>
+        <button style="font-size: 25px;"id="btn2" onclick="btn2onclick(this)" class="buttonstyle2">select secret animal image 2</button>
+        <button style="font-size: 25px;"id="btn3" onclick="btn3onclick(this)" class="buttonstyle2">select secret animal image 3</button>
+    </div>
+    <p style="font-size: 30px; color: red;"id="buttonselected">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsecret animal button curently activated : none</p>
+    </section>
+    <!--
+    <img src='kristian.pensum.uke.2\bird.jpg'>
+    <img src="kristian.pensum.uke.2\cat.jpg">
+    <img src="kristian.pensum.uke.2\dog.jpg">
+        -->
+
+    <h2>Random image clicker.</h2>
+    <p>click on one of the three empty boxes to get a random image :).</p>
+    <p>click on get name of the 3 random images button bellow the 3 boxes to get name of images.</p>
+    <p>scroll down on webpage if you cant see names of 3 random images :).</p>
+    
+    <br>
+    <br>
+    <br>
+    <div>
+    <img id="random1" class="box2" onclick="trerandomimg('random1','250px')"/>
+    <img id="random2" class="box2" onclick="trerandomimg('random2','250px')"/>
+    <img id="random3" class="box2" onclick="trerandomimg('random3','250px')"/>
+    </div>
+    <br>
+    <br>
+    <br>
+    <button class="btn" onclick="navnrandomimg()">get name of the 3 random images</button>
+    <p id="navnrandomimgid"></p>
+
+    <p style="color: blue;">that is all</p>
+    <p style="color: blue;">have a nice day :).</p>
+    <p style="color: blue;">Good Bye! :).</p>
+    <p style="color: red;">Kristian Johannessen 2023.</p>
+    
+
+
+</body>
+
+</html>
+<script src="testjavapensumuke2.js"></script>
